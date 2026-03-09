@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volga Park - Галерея</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="files.html">Файлы</a></li>
+                <li><a href="updates.html">Обновления</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="license.html">Лицензия</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-section">
+            <h1>Галерея Volga Park</h1>
+            <p style="text-align: center; color: #8b5a2b;">Красивейшие места и моменты нашего парка</p>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="park">Парки</button>
+                <button class="filter-btn" data-filter="attractions">Аттракционы</button>
+                <button class="filter-btn" data-filter="events">Ивенты</button>
+                <button class="filter-btn" data-filter="nature">Природа</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Парки -->
+                <div class="gallery-item" data-category="park">
+                    <img src="images/gallery/screenshot.jpg" alt="Дом в ЖК" onerror="this.src='https://via.placeholder.com/280x220?text=Central+Park'">
+                    <div class="gallery-caption">
+                        <h3>Центральный парк</h3>
+                        <p>Главная парковая зона сервера</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="park">
+                    <img src="images/gallery/screenshot2.png" alt="Бежевые дома" onerror="this.src='https://via.placeholder.com/280x220?text=Rose+Garden'">
+                    <div class="gallery-caption">
+                        <h3>Бежевые дома</h3>
+                        <p>Красивые дома в новом ЖК</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="park">
+                    <img src="images/gallery/japanese-garden.jpg" alt="Японский сад" onerror="this.src='https://via.placeholder.com/280x220?text=Japanese+Garden'">
+                    <div class="gallery-caption">
+                        <h3>Японский сад</h3>
+                        <p>Сакура, мостики и пруды с карпами</p>
+                    </div>
+                </div>
+
+                <!-- Аттракционы -->
+                <div class="gallery-item" data-category="attractions">
+                    <img src="images/gallery/ferris-wheel.jpg" alt="Колесо обозрения" onerror="this.src='https://via.placeholder.com/280x220?text=Ferris+Wheel'">
+                    <div class="gallery-caption">
+                        <h3>Колесо обозрения</h3>
+                        <p>Главный аттракцион парка</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="attractions">
+                    <img src="images/gallery/roller-coaster.jpg" alt="Американские горки" onerror="this.src='https://via.placeholder.com/280x220?text=Roller+Coaster'">
+                    <div class="gallery-caption">
+                        <h3>Американские горки</h3>
+                        <p>Скоростные горки над парком</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="attractions">
+                    <img src="images/gallery/carousel.jpg" alt="Карусель" onerror="this.src='https://via.placeholder.com/280x220?text=Carousel'">
+                    <div class="gallery-caption">
+                        <h3>Волшебная карусель</h3>
+                        <p>Любимый аттракцион детей</p>
+                    </div>
+                </div>
+
+                <!-- Ивенты -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/new-year.jpg" alt="Новый год" onerror="this.src='https://via.placeholder.com/280x220?text=New+Year'">
+                    <div class="gallery-caption">
+                        <h3>Новогодняя ночь</h3>
+                        <p>Празднование 2024 года в парке</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/halloween.jpg" alt="Хэллоуин" onerror="this.src='https://via.placeholder.com/280x220?text=Halloween'">
+                    <div class="gallery-caption">
+                        <h3>Хэллоуин в парке</h3>
+                        <p>Страшные аттракционы и тыквы</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/flower-festival.jpg" alt="Фестиваль цветов" onerror="this.src='https://via.placeholder.com/280x220?text=Flower+Festival'">
+                    <div class="gallery-caption">
+                        <h3>Фестиваль цветов</h3>
+                        <p>Ежегодный парад цветов</p>
+                    </div>
+                </div>
+
+                <!-- Природа -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/gallery/waterfall.jpg" alt="Водопад" onerror="this.src='https://via.placeholder.com/280x220?text=Waterfall'">
+                    <div class="gallery-caption">
+                        <h3>Горный водопад</h3>
+                        <p>Живописный водопад в парке</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/gallery/lake.jpg" alt="Озеро" onerror="this.src='https://via.placeholder.com/280x220?text=Lake'">
+                    <div class="gallery-caption">
+                        <h3>Лебединое озеро</h3>
+                        <p>Озеро с лебедями и лодками</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/gallery/sunset.jpg" alt="Закат" onerror="this.src='https://via.placeholder.com/280x220?text=Sunset'">
+                    <div class="gallery-caption">
+                        <h3>Закат над парком</h3>
+                        <p>Красивейшие закаты в Volga Park</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <p style="color: #8b5a2b;">Хочешь попасть в галерею со своим любимым местом?</p>
+                <p>Отправь скриншот в Discord или ВК с описанием!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <h3>Контакты</h3>
+            <p>📧 Email: <a href="mailto:admin@volgapark.ru">admin@volgapark.ru</a></p>
+            <p>💬 Discord: <a href="https://discord.gg/volgapark" target="_blank">https://discord.gg/volgapark</a></p>
+            <p>📱 ВКонтакте: <a href="https://vk.com/volgapark" target="_blank">@volgapark</a></p>
+            <p>© 2024 Volga Park. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
